@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Answers & Assumptions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	
+	<link rel="stylesheet" href="css/m-style.css">
+
+  <script type="text/javascript" src="js/htmx.min.js" ></script>
+  <script type="text/javascript" src="js/sortable.min.js" ></script>
+</head>
+<script>
+  htmx.onLoad(function(content) {
+    var sortables = content.querySelectorAll(".sortable");
+    var notMove = content.querySelector(".not-move");
+
+    new Sortable(notMove, {
+      // group: "group",
+      sort: false
+    });
+
+    for (var i = 0; i < sortables.length; i++) {
+      var sortable = sortables[i];
+      new Sortable(sortable, {
+        group: "group",
+        animation: 150,
+        ghostClass: 'blue-background-class'
+      });
+    }
+  })
+
+</script>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-time">
+				60
+			</div>
+
+			<button class="header-btn header-team">
+				MY TEAM
+			</button>
+
+			<button class="header-btn header-ask">
+				?
+			</button>
+		</header>
+
+		<div class="content">
+			<div class="guess">
+        <div class="htmx-indicator">Updating...</div>
+
+        <div class="">
+         <h2 class="mb-0">ROUND 1</h2>
+
+         <p class="px-5">
+          In hours and minutes what is the longest someone...
+          <button>See More</button>
+        </p>
+
+        <div class="guess-choose guess-choose-bg sortable">
+          <h5 class="guess-number guess-number--1">
+            GUESS A
+          </h5>
+          <h5 class="guess-number guess-number--2">
+            GUESS B
+          </h5>
+
+          <div class="guess-choose--left sortable">
+            <div class="guess-choose--circle">
+              <h5 class="guess-choose-1x1">
+                100
+                <span>pts</span>
+              </h5>
+            </div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+          </div>
+
+          <div class="guess-choose--mid sortable not-move">
+            <h6>121</h6>
+            <h6>122</h6>
+            <h6>123</h6>
+            <h6>124</h6>
+            <h6>125</h6>
+            <h6>126</h6>
+            <h6>127</h6>
+          </div>
+
+          <div class="guess-choose--right sortable">
+            <div class="guess-choose--circle">
+              <h5 class="guess-choose-1x2">
+                2x
+                <span>pts</span>
+              </h5>
+            </div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+            <div class="guess-choose--circle"></div>
+          </div>
+        </div>
+
+
+        <!-- <ul class="guess-choose guess-choose-bg sortable">
+          <h5 class="guess-number guess-number--1">
+            GUESS A
+          </h5>
+          <h5 class="guess-number guess-number--2">
+            GUESS B
+          </h5>
+
+          <li>
+            <span class="guess-choose-1x1">
+              100
+              <span>pts</span>
+            </span>
+            416
+            <span class="guess-choose-1x2">
+              2x
+              <span>pts</span>
+            </span>
+          </li>
+
+          <li>
+            1
+          </li>
+
+          <li>
+            4
+          </li>
+
+          <li>
+            5
+          </li>
+
+          <li>
+            416
+          </li>
+
+          <li>
+            416
+          </li>
+
+          <li>
+            10,000
+          </li>
+        </ul> -->
+
+        <p class="guess-text px-5">
+          Move buttons to make your guesses before time runs out!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- </form> -->
+  <footer class="footer"></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Grand Auction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Chart CSS -->
+	<link rel="stylesheet" href="css/Chart.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Start .wrapper -->
+	<div class="wrapper">
+		<!-- Start .content -->
+		<main class="content">			
+			<!-- Start .inflation -->
+			<div class="inflation">
+				<h2 class="inflation__title">
+					<span>Price change over time</span><br>
+					inflation [x]%
+				</h2>
+
+				<div class="inflation__chart">
+					<div class="inflation__chart-horizontal">
+						<h5>AVERAGE PRICE PAID</h5>
+
+						<div class="inflation__chart-container">
+							<canvas id="myChart"></canvas>
+						</div>
+					</div>
+
+					<h5>PAINTINGS SOLD</h5>
+				</div>
+			</div>
+			<!-- End /.inflation -->
+		</main>
+		<!-- End /.content -->
+	</div>
+	<!-- End /.wrapper -->	
+
+	<script src="js/Chart.min.js"></script>
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+				datasets: [{
+					label: 'AVERAGE PRICE PAID',
+					data: [30, 23, 40, 50, 40, 125, 70, 125, 70, 60],
+					backgroundColor: [
+					'rgba(34, 177, 82, .05)',
+					],
+					borderColor: [
+					'rgba(34, 177, 82, 1)',
+					],
+					borderWidth: 5,
+				}]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					display: false,
+				},
+				elements: {
+					point:{
+						radius: 0
+					}
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: false,						
+						},
+						ticks: {
+							beginAtZero: true,
+							fontSize: 25
+						},
+						gridLines: {
+							color: "rgba(0, 0, 0, 0)",
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: false,
+						},
+						ticks: {
+							beginAtZero: true,
+							fontSize: 25
+						}
+					}]					
+				}
+			}
+		});
+	</script>
+</body>
+</html>
