@@ -275,6 +275,10 @@ strong {
   background: url("../img/how-bg-desktop.png") center / cover no-repeat;
 }
 
+.dh-bg-dragon-central {
+  background: url("../img/central-dragon-bg.png") center / cover no-repeat;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -282,7 +286,6 @@ strong {
   justify-content: center;
   flex-grow: 1;
   /*position: relative;*/
-  padding: 0 7rem;
   width: 100%;
   z-index: 9;
 }
@@ -307,7 +310,11 @@ strong {
   justify-content: space-between;
   flex-shrink: 0;
   padding: 4.5rem 5rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .dh-header__leave {
@@ -340,12 +347,12 @@ strong {
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  padding-top: 10rem;
+  padding: 19.5rem 7rem 0;
 }
 
 .dh-start img {
-  width: 100%;
-  max-width: 85rem;
+  width: 85rem;
+  max-width: 100%;
 }
 
 .dh-start h5 {
@@ -377,8 +384,7 @@ strong {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-top: 19rem;
-  padding-bottom: 14.5rem;
+  padding: 28.5rem 7rem 14.5rem;
   width: 100%;
 }
 
@@ -443,7 +449,13 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 7rem 0;
+}
+.ds-pb {
+  padding-bottom: 3rem;
+}
+.ds-central {
+  padding-top: 15rem;
 }
 
 .ds h2 {
@@ -455,6 +467,14 @@ strong {
   margin-top: 3rem;
   margin-bottom: 0;
 }
+.ds-central h2 {
+  margin-bottom: 5.3rem;
+}
+.ds h3 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 7.8rem;
+}
 
 .ds-container {
   display: flex;
@@ -463,10 +483,17 @@ strong {
   justify-content: space-between;
   width: 47rem;
 }
+.ds-central .ds-container {
+  width: 77rem;
+}
 
 .ds-full {
   height: 4rem;
   width: 1.6rem;
+}
+.ds-central .ds-full {
+  height: 6.6rem;
+  width: 2.6rem;
 }
 
 .ds-empty {
@@ -566,8 +593,13 @@ strong {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 6rem;
+  height: 22rem;
   width: 100%;
+  z-index: 999;
 }
 
 .dh-header-big > div {
@@ -575,14 +607,15 @@ strong {
 }
 
 .dh-header-big__join {
-
+  background: url("../img/header-join-bg.png") center / 100% 100% no-repeat;
+  padding: 2rem 0 2rem 7rem;
 }
 
 .dh-header-big__join p {
   line-height: 3.3rem;
 }
 
-.dh-header-big__join p span {
+.dh-header-big__join p span:first-of-type {
   display: block;
   font-size: 4.3rem;
   line-height: 4.3rem;
@@ -607,6 +640,7 @@ strong {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding-right: 7rem;
 }
 
 /* custom circle progress bar styles */
@@ -674,7 +708,7 @@ strong {
   flex-direction: row;
   justify-content: space-between;
   flex-grow: 1;
-  padding-bottom: 15rem;
+  padding: 22rem 7rem 15rem;
   width: 100%;
 }
 
@@ -737,6 +771,335 @@ strong {
 }
 
 
+/* icons styles */
+.dh-icons {
+  flex-grow: 1;
+  padding: 15rem 7rem 0;
+  width: 100%;
+}
+.dh-icons--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 6.3rem;
+  font-weight: 400;
+  line-height: 6.3rem;
+  margin-bottom: 2.5rem;
+}
+.dh-icons--title img {
+  margin-right: 2.5rem;
+  height: 5.7rem;
+}
+.dh-icons--title span {
+  margin-right: 1rem;
+}
+
+.dh-icons__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.dh-icons__content h2 {
+  font-size: 8.9rem;
+  line-height: 8.9rem;
+}
+.dh-icons__content img {
+  margin-bottom: 3rem;
+  width: 31rem;
+}
+.dh-icons__content h3 {
+  margin-bottom: 2.9rem;
+}
+
+.dh-icons__left,
+.dh-icons__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dh-icons__btns {
+  width: 100%;
+}
+.dh-icons__btns button {
+  margin: 0 auto;
+  height: 5rem;
+  width: 14rem;
+}
+
+
+/* dragon styles */
+.dh-dragon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 7rem 5rem;
+  width: 100%;
+}
+.dh-dragon h2 {
+  font-size: 6.2rem;
+  margin-bottom: 4rem;
+}
+.dh-dragon h3 {
+  font-size: 6.5rem;
+  margin-bottom: 3rem;
+}
+.dh-dragon__row {
+  display: flex;
+  flex-direction: row;
+}
+.dh-dragon__row h4 {
+  display: flex;
+  flex-direction: row;
+  font-size: 5.9rem;
+  line-height: 5.9rem;
+  margin: 0 2rem;
+}
+.dh-dragon__row h4 img {
+  margin-right: 1.7rem;
+  height: 5.1rem;
+}
+
+.dh-dragon-wake {
+  padding: 0;
+}
+.dh-dragon-wake--bg {
+  background: rgba(20, 10, 37, 0.4);
+  backdrop-filter: blur(24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 100%;
+}
+.dh-dragon-wake h2 {
+  font-size: 8.2rem;
+  font-weight: 700;
+  line-height: 8.2rem;
+  margin-bottom: 2rem;
+}
+.dh-dragon-wake h3 {
+  font-size: 4.7rem;
+  line-height: 4.7rem;
+}
+
+
+/* footer styles */
+.dh-footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+}
+.dh-footer p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 4.1rem;
+}
+.dh-footer p img {
+  margin: 0 1rem;
+  height: 4.1rem;
+}
+
+
+/* stay styles */
+.dh-stay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 13.5rem 7rem 0;
+  width: 100%;
+}
+.dh-stay > h2 {
+  font-size: 8.2rem;
+  line-height: 8.2rem;
+  margin-bottom: 4.3rem;
+}
+.dh-stay > h3 {
+  font-size: 5.4rem;
+  line-height: 5.4rem;
+  margin-bottom: 1rem;
+}
+.dh-stay > h4 {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  margin-bottom: 2.6rem;
+  text-transform: uppercase;
+}
+.dh-stay > p {
+  font-family: "Roboto";
+  font-size: 2.2rem;
+  text-align: center;
+}
+.dh-stay > p span {
+  display: block;
+  line-height: 5.4rem;
+}
+
+.dh-stay-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+.dh-stay-row div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+.dh-stay-row div > h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 5.9rem;
+  line-height: 4rem;
+}
+.dh-stay-row div > h2 img {
+  flex-shrink: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.dh-stay-row div > img {
+  margin: 0 3.7rem;
+  width: 25rem;
+}
+.dh-stay-row div > h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.dh-stay-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 6.6rem;
+}
+.dh-stay-footer--side {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  height: 100%;
+  width: 36rem;
+}
+.dh-stay-footer--side h3 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.dh-stay-footer--side img {
+  cursor: pointer;
+  margin-left: 1.7rem;
+  height: 3.9rem;
+  width: 3.9rem;
+}
+
+.dh-stay-footer--middle {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 5.4rem;
+  padding: 0 2rem;
+  height: 100%;
+}
+.dh-stay-footer--middle h2 {
+  font-size: 3.1rem;
+  line-height: 3.1rem;
+  margin: 0 1rem;
+}
+.dh-stay-footer--middle h2 img {
+  height: 2.6rem;
+}
+
+
+/* most styles */
+.dh-most {
+  background-color: rgba(20, 10, 37, 0.4);
+  backdrop-filter: blur(24px);
+  flex-grow: 1;
+  margin-right: auto;
+  padding: 27rem 6rem 0 10rem;
+  width: 60%;
+}
+.dh-most > h2 {
+  font-size: 6.2rem;
+  line-height: 6.2rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.dh-most > h2:before {
+  content: "";
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  bottom: -1.8rem;
+  left: 2rem;
+  height: 1px;
+  width: 80%;
+}
+.dh-table {
+  display: flex;
+  flex-direction: row;
+}
+.dh-table--group {
+  flex-direction: column;
+  width: 50%;
+}
+.dh-table-el {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.7rem 0 5.4rem;
+  height: 10rem;
+}
+.dh-table--group:first-child .dh-table-el:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.dh-table--group:last-child .dh-table-el:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.dh-table-el h3 {
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  letter-spacing: .1em;
+}
+.dh-table-el h3 span {
+  display: inline-block;
+  margin-right: 1.1rem;
+  text-align: right;
+  width: 6rem;
+}
+.dh-table-el h4 {
+  background: url("../img/icon-jewel.png") center / 100% 100% no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  line-height: 4.1rem;
+  height: 5.5rem;
+  width: 7.7rem;
+}
 
 
 
