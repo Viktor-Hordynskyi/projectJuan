@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dragon's Hoard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper dh-bg-dragon-central">
+  <div class="content">
+    <div class="dh-header-big hide">
+      <div class="dh-header-big__join">
+        <p class="text-uppercase">
+          <span>JOIN GAME</span>
+          MeetmaxGAMES.com/dragon
+          <br>
+          CODE: XXXX
+        </p>
+      </div>
+
+      <div class="dh-header-big__step">
+        <h4>ADVENTURE</h4>
+        <h3>1 OF 3</h3>
+      </div>
+
+      <div class="dh-header-big__time">
+        <div class="circle-progress" data-progress="34">
+          <div class="circle-progress__content"></div>
+          <div class="circle-progress__container">
+            <div class="circle-progress__left-side circle-progress__half-circle"></div>
+            <div class="circle-progress__right-side circle-progress__half-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dh-final">
+      <div class="dh-final--title">
+        <h2>FINAL RESULTS</h2>
+      </div>
+
+      <div class="dh-final--bg">
+        <h3>THE WINNER!</h3>
+
+        <h4>FRED THE GREAT</h4>
+      </div>
+    </div>
+
+    <div class="dh-footer">
+      <p>
+        Message TBC
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+    let circleProgressValue = document.querySelector('.circle-progress').getAttribute('data-progress');
+    let circleProgressLS = document.querySelector('.circle-progress .circle-progress__left-side')
+    let circleProgressContainer = document.querySelector('.circle-progress .circle-progress__container')
+
+    if (circleProgressValue >= 50) {
+        circleProgressLS.style.transform = `rotate(-${3.6 * circleProgressValue}deg`;
+    } else {
+        circleProgressContainer.classList.add('half');
+        circleProgressLS.style.transform = `rotate(-${3.6 * circleProgressValue}deg`;
+    }
+</script>
+</body>
+</html>
