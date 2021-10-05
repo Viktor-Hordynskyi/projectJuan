@@ -1341,4 +1341,11 @@ strong {
   .dh-choice__content h2 {
     padding-left: 3.5rem;
   }
+
+  .dh-start {
+    padding: 9rem 0 0;
+  }
+  .dh-start h5 {
+    margin-top: 6rem;
+  }
 }
