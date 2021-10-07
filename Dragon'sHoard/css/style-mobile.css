@@ -1127,7 +1127,7 @@ strong {
 
   .dh-icons__content img {
     margin: 0 1.5rem 3rem;
-    width: 14.7rem;
+    width: 21rem;
   }
 
   .dh-icons__content h2 {
@@ -1233,13 +1233,14 @@ strong {
   }
   .dh-stay-footer--side {
     margin-bottom: .8rem;
-    height: 6.6rem;
-    width: 31rem;
+    height: 8rem;
   }
   .dh-stay-footer--side.hide {
     display: none;
   }
   .dh-stay-footer--side h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
   }
 
@@ -1251,16 +1252,16 @@ strong {
     margin-bottom: 2.9rem;
   }
   .dh-conf--group img {
-    width: 31.7rem;
+    width: 40rem;
     max-width: 100%;
   }
   .dh-conf--group h2 {
-    font-size: 2.3rem;
-    line-height: 2.7rem;
-    bottom: .6rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    bottom: 1rem;
   }
   .dh-conf p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 2.9rem;
   }
   .dh-conf p:not(:last-child) {
@@ -1269,10 +1270,14 @@ strong {
   .dh-conf .dh-how__btns {
     flex-direction: column;
     align-items: center;
-    margin-top: 5.7rem;
+  }
+  .dh-conf .dh-how__btns button {
+    font-size: 2.5rem;
+    height: 6rem;
+    width: 13rem;
   }
   .dh-conf .dh-how__btns button:not(:last-child) {
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
   }
 
   /* stay */
@@ -1280,23 +1285,30 @@ strong {
     padding: 14rem 2rem 0;
   }
   .dh-stay > h3 {
-    font-size: 4.2rem;
-    line-height: 4.7rem;
+    font-size: 6.2rem;
+    line-height: 6.7rem;
     text-align: center;
   }
+  .dh-stay > h4 {
+    font-size: 3rem;
+  }
   .dh-stay > h2 {
-    font-size: 5rem;
-    line-height: 5rem;
     margin-bottom: 2.3rem;
     order: 1;
     text-align: center;
-    width: 25rem;
+    width: 35rem;
+  }
+  .dh-stay-row div > h2 {
+    font-size: 7rem;
+  }
+  .dh-stay-row div > img {
+    width: 35rem;
   }
   .dh-stay > p {
     flex-grow: 1;
+    font-size: 3rem;
     order: 3;
-    font-size: 1.6rem;
-    width: 25rem;
+    width: 40rem;
   }
   .dh-stay-row {
     flex-grow: 0;
@@ -1312,6 +1324,11 @@ strong {
   .dh-stay .dh-stay-footer {
     order: 4;
   }
+
+  .dh-stay-footer--side img {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 /* Landscape phones and smaller */
@@ -1320,25 +1337,52 @@ strong {
     font-size: 9px;
   }
 
-  .dh-choice__left,
-  .dh-choice__right {
-    background-size: 15rem;
-    padding-top: 12rem;
+  .dh-stay {
+    padding-top: 10rem;
   }
-  .dh-choice__content {
-    padding-bottom: 1rem;
+  .dh-stay > h3 {
+    font-size: 4.2rem;
+    line-height: 4.7rem;
   }
-  .dh-choice__content h2 {
-    font-size: 4rem;
-    line-height: 4rem;
+  .dh-stay > h4 {
     margin-bottom: 1rem;
   }
+  .dh-stay > h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2.3rem;
+    width: 25rem;
+  }
+  .dh-stay > p {
+    font-size: 1.6rem;
+    width: 25rem;
+  }
+  .dh-stay-row div {
+    margin-bottom: 0;
+  }
+  .dh-stay-row div > img {
+    width: 25rem;
+  }
+
+  .dh-choice__left,
+  .dh-choice__right {
+    background-size: 25rem;
+    padding-top: 20rem;
+  }
+  .dh-choice__content {
+    flex-grow: 0;
+  }
+  .dh-choice__content h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
   .dh-choice__content h3 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .dh-choice__content h2 img {
-    height: 3rem;
+    height: 4rem;
   }
 
   .dh-start {
@@ -1346,34 +1390,6 @@ strong {
   }
   .dh-start h5 {
     margin-top: 6rem;
-  }
-
-  .dh-icons {
-    padding: 8.1rem 2rem 2rem;
-  }
-  .dh-icons > h3 {
-    line-height: 4.7rem;
-    margin-bottom: 1rem;
-  }
-  .dh-icons--title {
-    margin-bottom: 1rem;
-  }
-  .dh-icons__content img {
-    margin-bottom: 2rem;
-    width: 10rem;
-  }
-
-  .dh-how {
-    padding: 9rem 2rem 2rem;
-  }
-  .dh-how--title {
-    font-size: 5.9rem;
-    line-height: 6.9rem;
-    margin-bottom: 2rem;
-  }
-  .dh-how__content > p {
-    font-size: 2.3rem;
-    line-height: 2.6rem;
   }
 
   /* Danger Slider */
@@ -1397,5 +1413,147 @@ strong {
   .dh-stay-footer--middle {
     padding: 0 1rem;
     width: 100%;
+  }
+  .dh-stay-footer--side {
+    margin-bottom: .8rem;
+    height: 6.6rem;
+    width: 31rem;
+  }
+
+  .dh-conf .dh-how__btns button {
+    font-size: 1.9rem;
+    height: 5rem;
+    width: 10.5rem;
+  }
+  .dh-conf--group img {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .dh-icons {
+    padding: 8.1rem 2rem 2rem;
+  }
+  .dh-icons > h3 {
+    line-height: 4.7rem;
+    margin-bottom: 1rem;
+  }
+  .dh-icons--title {
+    margin-bottom: 1rem;
+  }
+  .dh-icons__content img {
+    margin-bottom: 2rem;
+    width: 10rem;
+  }
+
+  .dh-how {
+    padding: 9rem 2rem 2rem;
+  }
+  .dh-how--title {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 1rem;
+  }
+  .dh-how__step h3 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 0;
+  }
+  .dh-how__content > p {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+  }
+  .dh-how__step > p {
+    line-height: 2.6rem;
+  }
+  .dh-how__step img {
+    margin-bottom: 0;
+    height: 3rem;
+  }
+
+  .dh-choice__left,
+  .dh-choice__right {
+    background-size: 15rem;
+    padding-top: 12rem;
+  }
+  .dh-choice__content {
+    padding-bottom: 1rem;
+  }
+  .dh-choice__content h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  .dh-choice__content h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .dh-choice__content h2 img {
+    height: 3rem;
+  }
+
+  .dh-conf {
+    padding-top: 4rem;
+  }
+  .dh-conf__content {
+    margin-bottom: 1rem;
+  }
+  .dh-conf--group {
+    margin-bottom: 0;
+  }
+  .dh-conf--group img {
+    width: 20rem;
+  }
+  .dh-conf--group h2 {
+    width: 100%;
+  }
+  .dh-conf p {
+    line-height: 2.4rem;
+  }
+  .dh-conf .dh-how__btns {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .dh-conf .dh-how__btns button:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .dh-stay {
+    padding-top: 10rem;
+  }
+  .dh-stay > h3 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 0;
+  }
+  .dh-stay > h4 {
+    margin-bottom: 0;
+  }
+  .dh-stay > h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .dh-stay-row div > h2 {
+    font-size: 4rem;
+  }
+  .dh-stay-row div > img {
+    width: 10rem;
+  }
+  .dh-stay > p {
+    line-height: 1.8rem;
+  }
+
+  .dh-stay-footer--side {
+    width: 100%;
+  }
+  .dh-stay-footer--side h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .dh-stay-footer--side img {
+    height: 3.9rem;
+    width: 3.9rem;
   }
 }
