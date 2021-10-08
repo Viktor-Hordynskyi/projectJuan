@@ -458,6 +458,7 @@ strong {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .dh-how__btns button {
@@ -562,6 +563,7 @@ strong {
 }
 
 .dh-icons__btns {
+  padding-bottom: 2rem;
   width: 100%;
 }
 
@@ -666,6 +668,8 @@ strong {
   flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   height: 6.6rem;
 }
 
@@ -1149,6 +1153,7 @@ strong {
 
   /* how */
   .dh-how {
+    justify-content: center;
     padding: 14.2rem 2rem 5.4rem;
   }
 
@@ -1158,6 +1163,7 @@ strong {
   }
 
   .dh-how__content {
+    flex-grow: 0;
     margin: 0 auto 2rem;
     padding: 0 2rem;
     max-width: 100%;
@@ -1215,6 +1221,8 @@ strong {
   }
   .dh-stay-footer {
     flex-direction: column-reverse;
+    padding-left: 2rem;
+    padding-right: 2rem;
     height: auto;
     width: 100%;
   }
@@ -1282,6 +1290,7 @@ strong {
 
   /* stay */
   .dh-stay {
+    justify-content: center;
     padding: 14rem 2rem 0;
   }
   .dh-stay > h3 {
@@ -1290,7 +1299,8 @@ strong {
     text-align: center;
   }
   .dh-stay > h4 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
   }
   .dh-stay > h2 {
     margin-bottom: 2.3rem;
@@ -1305,7 +1315,6 @@ strong {
     width: 35rem;
   }
   .dh-stay > p {
-    flex-grow: 1;
     font-size: 3rem;
     order: 3;
     width: 40rem;
@@ -1341,11 +1350,8 @@ strong {
     padding-top: 10rem;
   }
   .dh-stay > h3 {
-    font-size: 4.2rem;
-    line-height: 4.7rem;
-  }
-  .dh-stay > h4 {
-    margin-bottom: 1rem;
+    font-size: 5.2rem;
+    line-height: 5.7rem;
   }
   .dh-stay > h2 {
     font-size: 5rem;
@@ -1366,16 +1372,17 @@ strong {
 
   .dh-choice__left,
   .dh-choice__right {
-    background-size: 25rem;
+    background-size: 24rem;
     padding-top: 20rem;
   }
   .dh-choice__content {
-    flex-grow: 0;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
   .dh-choice__content h2 {
     font-size: 5rem;
     line-height: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .dh-choice__content h3 {
     font-size: 3rem;
@@ -1430,24 +1437,28 @@ strong {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+  html {
+    font-size: 9px;
+  }
+
+  .dh-icons__content {
+    flex-grow: 0;
+  }
   .dh-icons {
-    padding: 8.1rem 2rem 2rem;
+    justify-content: center;
+    padding: 12rem 2rem 2rem;
   }
   .dh-icons > h3 {
     line-height: 4.7rem;
-    margin-bottom: 1rem;
-  }
-  .dh-icons--title {
-    margin-bottom: 1rem;
   }
   .dh-icons__content img {
     margin-bottom: 2rem;
-    width: 10rem;
+    width: 15rem;
   }
 
   .dh-how {
-    padding: 9rem 2rem 2rem;
+    padding: 9rem 2rem 0;
   }
   .dh-how--title {
     font-size: 5rem;
@@ -1496,6 +1507,9 @@ strong {
     padding-top: 4rem;
   }
   .dh-conf__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 1rem;
   }
   .dh-conf--group {
@@ -1518,17 +1532,6 @@ strong {
     margin-bottom: 0;
   }
 
-  .dh-stay {
-    padding-top: 10rem;
-  }
-  .dh-stay > h3 {
-    font-size: 3rem;
-    line-height: 3.2rem;
-    margin-bottom: 0;
-  }
-  .dh-stay > h4 {
-    margin-bottom: 0;
-  }
   .dh-stay > h2 {
     font-size: 4rem;
     line-height: 4rem;
@@ -1539,10 +1542,12 @@ strong {
     font-size: 4rem;
   }
   .dh-stay-row div > img {
-    width: 10rem;
+    width: 20rem;
   }
   .dh-stay > p {
-    line-height: 1.8rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 30rem;
   }
 
   .dh-stay-footer--side {
@@ -1555,5 +1560,49 @@ strong {
   .dh-stay-footer--side img {
     height: 3.9rem;
     width: 3.9rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .dh-stay {
+    padding-top: 8rem;
+  }
+  .dh-stay > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .dh-stay > h3 {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    margin-bottom: 0;
+  }
+  .dh-stay > h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .dh-stay-row div > h2 {
+    font-size: 3rem;
+  }
+  .dh-stay-row div > img {
+    width: 15rem;
+  }
+  .dh-stay > p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    width: 100%;
+  }
+
+  .dh-icons {
+    padding-top: 8rem;
+  }
+  .dh-icons > h3 {
+    margin-bottom: 1rem;
+  }
+  .dh-icons--title {
+    margin-bottom: 1rem;
+  }
+  .dh-icons__content img {
+    width: 10rem;
   }
 }
